@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-02-11T22:04:03.033372" rpa="false" schemaversion="5">
+<suite id="s1" name="testCases" source="/home/aliff/Documents/RobotFramework/tests/testCases.robot">
+<test id="s1-t1" name="Set Filter" line="34">
+<kw name="Open the Browser with the Swag Labs Text" owner="Generic" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-11T22:04:03.228965" level="INFO">Opening browser 'firefox' to base url 'Chrome'.</msg>
+<msg time="2024-02-11T22:04:03.230134" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-02-11T22:04:03.230306" level="FAIL">NoSuchDriverException: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<arg>${browser_name}</arg>
+<arg>executable_path=resources/${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-02-11T22:04:03.228496" elapsed="0.002933">NoSuchDriverException: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-02-11T22:04:03.231939" elapsed="0.000096"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2024-02-11T22:04:03.232234" elapsed="0.000067"/>
+</kw>
+<arg>Chrome</arg>
+<status status="FAIL" start="2024-02-11T22:04:03.227274" elapsed="0.005215">NoSuchDriverException: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Close Browser Session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-11T22:04:03.233329" elapsed="0.000221"/>
+</kw>
+<status status="PASS" start="2024-02-11T22:04:03.232889" elapsed="0.000789"/>
+</kw>
+<status status="FAIL" start="2024-02-11T22:04:03.226489" elapsed="0.007271">Setup failed:
+NoSuchDriverException: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<doc>To validate the Login form</doc>
+<status status="FAIL" start="2024-02-11T22:04:03.040374" elapsed="0.194013"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="testCases">testCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

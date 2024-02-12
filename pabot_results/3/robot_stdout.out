@@ -1,0 +1,25 @@
+==============================================================================
+testCases :: To validate the Login form                                       
+==============================================================================
+Set Filter                                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/aliff/Documents/RobotFramework/tests/testCases.robot:34
+    T:  Set Filter    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/aliff/Documents/RobotFramework/tests/testCases.robot:10
+      Open the Browser with the Swag Labs Text    Chrome
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /home/aliff/Documents/RobotFramework/PO/Generic.robot:17
+      Open Browser    ${browser_name}    executable_path=resources/${browser_name}
+      |  ${browser_name} = Chrome (str)
+      |  executable_path=resources/${browser_name} = executable_path=resources/Chrome (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+NoSuchDriverException: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+------------------------------------------------------------------------------
+testCases :: To validate the Login form                               | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /home/aliff/Documents/RobotFramework/pabot_results/3/output.xml
